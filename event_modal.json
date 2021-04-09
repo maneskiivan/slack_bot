@@ -1,0 +1,229 @@
+{
+	"title": {
+		"type": "plain_text",
+		"text": "Event Set-Up",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit"
+	},
+	"type": "modal",
+	"callback_id": "event",
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Summary",
+				"emoji": true
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Date"
+			},
+			"accessory": {
+				"type": "datepicker",
+				"initial_date": "1990-04-28",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select a date",
+					"emoji": true
+				},
+				"action_id": "datepicker-action"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Time"
+			},
+			"accessory": {
+				"type": "timepicker",
+				"initial_time": "12:00",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select time",
+					"emoji": true
+				},
+				"action_id": "timepicker-action"
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Event location",
+				"emoji": true
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Hardware needed"
+			},
+			"accessory": {
+				"type": "checkboxes",
+				"options": [
+					{
+						"text": {
+							"type": "mrkdwn",
+							"text": "Laptop"
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "mrkdwn",
+							"text": "Webcam"
+						},
+						"value": "value-1"
+					},
+					{
+						"text": {
+							"type": "mrkdwn",
+							"text": "Projector"
+						},
+						"value": "value-2"
+					},
+					{
+						"text": {
+							"type": "mrkdwn",
+							"text": "Projector Screen"
+						},
+						"value": "value-3"
+					},
+					{
+						"text": {
+							"type": "mrkdwn",
+							"text": "Microphone"
+						},
+						"value": "value-4"
+					},
+					{
+						"text": {
+							"type": "mrkdwn",
+							"text": "Speaker"
+						},
+						"value": "value-5"
+					}
+				],
+				"action_id": "checkboxes-action"
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select an item",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Yes",
+							"emoji": true
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "No",
+							"emoji": true
+						},
+						"value": "value-1"
+					}
+				],
+				"action_id": "static_select-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Zoom meeting",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"optional": true,
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "If yes, create and enter the Zoom Meeting ID below.\n",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select an item",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Yes",
+							"emoji": true
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "No",
+							"emoji": true
+						},
+						"value": "value-1"
+					}
+				],
+				"action_id": "static_select-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Does this meeting need to be recorded?",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"multiline": true,
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Description",
+				"emoji": true
+			}
+		}
+	]
+}

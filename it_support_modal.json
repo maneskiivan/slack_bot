@@ -1,0 +1,159 @@
+{
+	"title": {
+		"type": "plain_text",
+		"text": "IT Support",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"type": "modal",
+	"callback_id": "it_support",
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Are you having issues with any of the following: ",
+				"emoji": true
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "JumpCloud lockouts"
+			},
+			"accessory": {
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"text": "Click Me",
+					"emoji": true
+				},
+				"value": "click_me_123",
+				"url": "https://docs.google.com/document/d/1fXM3QNy3Nb7u57qFTm5mHTjFUJGsP_eGAfDYw5Rum6c/edit",
+				"action_id": "button-action"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "G Suite WiKi"
+			},
+			"accessory": {
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"text": "Click Me",
+					"emoji": true
+				},
+				"value": "G_Suite",
+				"url": "https://gumgum.jira.com/wiki/spaces/ITS/pages/1898447239/Gsuite",
+				"action_id": "button-action"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "JumpCloud WiKi"
+			},
+			"accessory": {
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"text": "Click Me",
+					"emoji": true
+				},
+				"value": "JumpCloud",
+				"url": "https://gumgum.jira.com/wiki/spaces/ITS/pages/796098594/JumpCloud",
+				"action_id": "button-action"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "LastPass WiKi"
+			},
+			"accessory": {
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"text": "Click Me",
+					"emoji": true
+				},
+				"value": "click_me_123",
+				"url": "https://gumgum.jira.com/wiki/spaces/ITS/pages/715030533/Passwords",
+				"action_id": "button-action"
+			}
+		},
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Open a ticket:",
+				"emoji": true
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Select an issue type"
+			},
+			"accessory": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Issue Types",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "IT Help",
+							"emoji": true
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "New Mailing List",
+							"emoji": true
+						},
+						"value": "value-1"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Purchase",
+							"emoji": true
+						},
+						"value": "value-2"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Event Set-Up",
+							"emoji": true
+						},
+						"value": "value-3"
+					}
+				],
+				"action_id": "static_select-action"
+			}
+		}
+	]
+}

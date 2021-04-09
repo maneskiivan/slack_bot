@@ -1,0 +1,47 @@
+{
+	"type": "modal",
+  "callback_id": "purchase",
+	"title": {
+		"type": "plain_text",
+		"text": "Purchase",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Summary",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+      "optional": true,
+			"element": {
+				"type": "plain_text_input",
+				"multiline": true,
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Description",
+				"emoji": true
+			}
+		}
+	]
+}
